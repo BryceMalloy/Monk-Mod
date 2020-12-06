@@ -33,6 +33,7 @@ public class MonkAbilitySpeed extends MonkAbilityAttribute {
 	@SubscribeEvent
 	@SideOnly(Side.CLIENT)
 	public void overrideFOV(@Nonnull FOVUpdateEvent event) {
+		/*
 		EntityPlayerSP player = Minecraft.getMinecraft().player;
 		if (player == null) return;
 		if (!MonkManager.getAbilityLevel(player, this)) return;
@@ -45,6 +46,8 @@ public class MonkAbilitySpeed extends MonkAbilityAttribute {
 		double newMult = multiplier(player, iattributeinstance);
 		iattributeinstance.applyModifier(modifier);
 		event.setNewfov((float) ((event.getFov() / oldMult) * newMult));
+		*/
+		return;
 	}
 
 	@SideOnly(Side.CLIENT)
